@@ -1,0 +1,32 @@
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+Debug/
+Release/
+TestResults/
+
+# Publish output
+publish/
+dimdim-app.zip
+
+# User-specific files
+*.user
+*.suo
+
+# Local configuration / secrets
+appsettings.Local.json
+appsettings.*.local.json
+.env
+.env.*
+!.env.example
+
+# Azure publish profiles
+*.PublishSettings
+*.pubxml.user
+publishprofile.xml
+*.publishsettings
+
+# OS
+.DS_Store
+Thumbs.db
