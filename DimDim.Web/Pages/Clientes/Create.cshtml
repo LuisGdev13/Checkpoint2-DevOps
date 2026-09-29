@@ -1,0 +1,56 @@
+@page
+@model DimDim.Web.Pages.Clientes.CreateModel
+
+@{
+    ViewData["Title"] = "Novo cliente";
+}
+
+<h1>Novo cliente</h1>
+
+<form method="post" class="mt-4">
+
+    <div asp-validation-summary="ModelOnly"
+         class="text-danger mb-3">
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Cliente.Nome" class="form-label">
+            Nome
+        </label>
+
+        <input asp-for="Cliente.Nome"
+               class="form-control" />
+
+        <span asp-validation-for="Cliente.Nome"
+              class="text-danger">
+        </span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Cliente.Email" class="form-label">
+            E-mail
+        </label>
+
+        <input asp-for="Cliente.Email"
+               type="email"
+               class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Cliente.Telefone" class="form-label">
+            Telefone
+        </label>
+
+        <input asp-for="Cliente.Telefone"
+               class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Salvar
+    </button>
+
+    <a asp-page="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

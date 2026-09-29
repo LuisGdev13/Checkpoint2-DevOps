@@ -1,0 +1,80 @@
+@page
+@model DimDim.Web.Pages.Transacoes.IndexModel
+
+@{
+    ViewData["Title"] = "Transações";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1>Transações</h1>
+        <p class="text-muted">
+            Gerencie as transações financeiras do DimDim.
+        </p>
+    </div>
+
+    <a asp-page="Create" class="btn btn-primary">
+        Nova transação
+    </a>
+</div>
+
+@if (!Model.Transacoes.Any())
+{
+    <div class="alert alert-info">
+        Nenhuma transação cadastrada.
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Tipo</th>
+                    <th>Data</th>
+                    <th>Cliente</th>
+                    <th class="text-end">Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var transacao in Model.Transacoes)
+                {
+                    <tr>
+                        <td>@transacao.Descricao</td>
+
+                        <td>
+                            @transacao.Valor.ToString("C")
+                        </td>
+
+                        <td>@transacao.Tipo</td>
+
+                        <td>
+                            @transacao.Data.ToString("dd/MM/yyyy HH:mm")
+                        </td>
+
+                        <td>
+                            @(transacao.Cliente?.Nome ?? "-")
+                        </td>
+
+                        <td class="text-end">
+                            <a asp-page="Edit"
+                               asp-route-id="@transacao.Id"
+                               class="btn btn-sm btn-outline-primary">
+                                Editar
+                            </a>
+
+                            <a asp-page="Delete"
+                               asp-route-id="@transacao.Id"
+                               class="btn btn-sm btn-outline-danger">
+                                Excluir
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}

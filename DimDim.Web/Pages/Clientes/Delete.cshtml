@@ -1,0 +1,51 @@
+@page
+@model DimDim.Web.Pages.Clientes.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir cliente";
+}
+
+<h1>Excluir cliente</h1>
+
+<div class="alert alert-warning mt-4">
+    <strong>Atenção!</strong>
+    Você está prestes a excluir este cliente.
+</div>
+
+<div class="card">
+    <div class="card-body">
+
+        <dl class="row">
+            <dt class="col-sm-3">Nome</dt>
+            <dd class="col-sm-9">@Model.Cliente.Nome</dd>
+
+            <dt class="col-sm-3">E-mail</dt>
+            <dd class="col-sm-9">
+                @(Model.Cliente.Email ?? "-")
+            </dd>
+
+            <dt class="col-sm-3">Telefone</dt>
+            <dd class="col-sm-9">
+                @(Model.Cliente.Telefone ?? "-")
+            </dd>
+        </dl>
+
+        <form method="post">
+
+            <input type="hidden"
+                   asp-for="Cliente.Id" />
+
+            <button type="submit"
+                    class="btn btn-danger">
+                Confirmar exclusão
+            </button>
+
+            <a asp-page="Index"
+               class="btn btn-secondary">
+                Cancelar
+            </a>
+
+        </form>
+
+    </div>
+</div>

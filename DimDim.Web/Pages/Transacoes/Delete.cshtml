@@ -1,0 +1,72 @@
+@page
+@model DimDim.Web.Pages.Transacoes.DeleteModel
+
+@{
+    ViewData["Title"] = "Excluir transação";
+}
+
+<h1>Excluir transação</h1>
+
+<div class="alert alert-warning mt-4">
+    <strong>Atenção!</strong>
+    Você está prestes a excluir esta transação.
+</div>
+
+<div class="card">
+    <div class="card-body">
+
+        <dl class="row">
+
+            <dt class="col-sm-3">
+                Descrição
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.Transacao.Descricao
+            </dd>
+
+            <dt class="col-sm-3">
+                Valor
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.Transacao.Valor.ToString("C")
+            </dd>
+
+            <dt class="col-sm-3">
+                Tipo
+            </dt>
+
+            <dd class="col-sm-9">
+                @Model.Transacao.Tipo
+            </dd>
+
+            <dt class="col-sm-3">
+                Cliente
+            </dt>
+
+            <dd class="col-sm-9">
+                @(Model.Transacao.Cliente?.Nome ?? "-")
+            </dd>
+
+        </dl>
+
+        <form method="post">
+
+            <input type="hidden"
+                   asp-for="Transacao.Id" />
+
+            <button type="submit"
+                    class="btn btn-danger">
+                Confirmar exclusão
+            </button>
+
+            <a asp-page="Index"
+               class="btn btn-secondary">
+                Cancelar
+            </a>
+
+        </form>
+
+    </div>
+</div>

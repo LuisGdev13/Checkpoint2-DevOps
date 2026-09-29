@@ -141,3 +141,4 @@ C:\Users\freit\Documents\All\Workspace\CP\Checkpoint2-DevOps\DimDim.Web\bin\Debu
 C:\Users\freit\Documents\All\Workspace\CP\Checkpoint2-DevOps\DimDim.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\freit\Documents\All\Workspace\CP\Checkpoint2-DevOps\DimDim.Web\obj\Debug\net8.0\DimDim.Web.csproj.AssemblyReference.cache
 C:\Users\freit\Documents\All\Workspace\CP\Checkpoint2-DevOps\DimDim.Web\obj\Debug\net8.0\DimDim.Web.csproj.Up2Date
+C:\Users\freit\Documents\All\Workspace\CP\Checkpoint2-DevOps\DimDim.Web\obj\Debug\net8.0\DimDim.Web.sourcelink.json
