@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: app-dimdim-devfreitas
+  AZURE_WEBAPP_NAME: app-dimdim-equipe
   DOTNET_VERSION: "8.0.x"
 
 permissions:
@@ -34,9 +34,13 @@ jobs:
       - name: Publish
         run: dotnet publish ./DimDim.Web/DimDim.Web.csproj --configuration Release --no-build --output ./publish
 
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ./publish
