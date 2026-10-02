@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $resourceGroup = "rg-dimdim"
-$location = "mexicocentral"
+$location = "canadacentral"
 $plan = "asp-dimdim"
 $app = "app-dimdim-devfreitas"
 
