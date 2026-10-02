@@ -1,7 +1,7 @@
 $ErrorActionPreference = "Stop"
 
 $resourceGroup = "rg-dimdim"
-$location = "mexicocentral"
+$location = "canadacentral"
 
 az group create `
   --name $resourceGroup `
