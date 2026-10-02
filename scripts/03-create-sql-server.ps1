@@ -10,6 +10,6 @@ if ([string]::IsNullOrWhiteSpace($env:DIMDIM_SQL_ADMIN_PASSWORD)) {
 az sql server create `
   --name sql-dimdim-devfreitas `
   --resource-group rg-dimdim `
-  --location mexicocentral `
+  --location canadacentral `
   --admin-user dimdimadmin `
   --admin-password $env:DIMDIM_SQL_ADMIN_PASSWORD
