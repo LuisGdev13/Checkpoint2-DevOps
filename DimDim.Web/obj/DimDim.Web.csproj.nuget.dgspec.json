@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\freit\\Documents\\All\\Workspace\\CP\\Checkpoint2-DevOps\\DimDim.Web\\DimDim.Web.csproj": {}
+    "/home/luis/Checkpoint2-DevOps/DimDim.Web/DimDim.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\freit\\Documents\\All\\Workspace\\CP\\Checkpoint2-DevOps\\DimDim.Web\\DimDim.Web.csproj": {
+    "/home/luis/Checkpoint2-DevOps/DimDim.Web/DimDim.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\freit\\Documents\\All\\Workspace\\CP\\Checkpoint2-DevOps\\DimDim.Web\\DimDim.Web.csproj",
+        "projectUniqueName": "/home/luis/Checkpoint2-DevOps/DimDim.Web/DimDim.Web.csproj",
         "projectName": "DimDim.Web",
-        "projectPath": "C:\\Users\\freit\\Documents\\All\\Workspace\\CP\\Checkpoint2-DevOps\\DimDim.Web\\DimDim.Web.csproj",
-        "packagesPath": "C:\\Users\\freit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\freit\\Documents\\All\\Workspace\\CP\\Checkpoint2-DevOps\\DimDim.Web\\obj\\",
+        "projectPath": "/home/luis/Checkpoint2-DevOps/DimDim.Web/DimDim.Web.csproj",
+        "packagesPath": "/home/luis/.nuget/packages/",
+        "outputPath": "/home/luis/Checkpoint2-DevOps/DimDim.Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\freit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/luis/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -37,12 +37,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.ApplicationInsights.AspNetCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.20, )"
@@ -65,6 +70,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.31, 8.0.31]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.31, 8.0.31]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -73,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.425/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.318/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
