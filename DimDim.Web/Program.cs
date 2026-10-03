@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorPages();
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddApplicationInsightsTelemetry();
 
 builder.Services.AddDbContext<DimDimDbContext>(options =>
