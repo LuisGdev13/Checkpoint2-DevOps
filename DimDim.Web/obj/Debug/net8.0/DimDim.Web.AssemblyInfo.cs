@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DimDim.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8f79d7d71c05a0df48262578beeb612dc3ae408")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8e94572b38db50d3db9bf6b06717870df1ae5f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("DimDim.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DimDim.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
