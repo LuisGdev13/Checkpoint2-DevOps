@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$app = "app-dimdim-devfreitas"
+$app = "app-dimdim-equipe"
 $rg = "rg-dimdim"
 
 # Connection string NÃO deve ser escrita no Git.

@@ -4,7 +4,7 @@ $ErrorActionPreference = "Stop"
 # Em produção, uma regra mais restritiva pode ser adotada.
 az sql server firewall-rule create `
   --resource-group rg-dimdim `
-  --server sql-dimdim-devfreitas `
+  --server sql-dimdim-equipe `
   --name AllowAzureServices `
   --start-ip-address 0.0.0.0 `
   --end-ip-address 0.0.0.0

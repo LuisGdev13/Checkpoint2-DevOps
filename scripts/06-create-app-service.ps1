@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 $resourceGroup = "rg-dimdim"
 $location = "canadacentral"
 $plan = "asp-dimdim"
-$app = "app-dimdim-devfreitas"
+$app = "app-dimdim-equipe"
 
 # Verifique os runtimes disponíveis se necessário:
 # az webapp list-runtimes --os-type windows

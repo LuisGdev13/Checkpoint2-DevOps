@@ -1,14 +1,13 @@
 $ErrorActionPreference = "Stop"
 
 # Defina a variável de ambiente antes de executar:
-# $env:DIMDIM_SQL_ADMIN_PASSWORD = "SUA_SENHA_FORTE"
 
 if ([string]::IsNullOrWhiteSpace($env:DIMDIM_SQL_ADMIN_PASSWORD)) {
     throw "Defina DIMDIM_SQL_ADMIN_PASSWORD antes de executar este script."
 }
 
 az sql server create `
-  --name sql-dimdim-devfreitas `
+  --name sql-dimdim-equipe `
   --resource-group rg-dimdim `
   --location canadacentral `
   --admin-user dimdimadmin `
