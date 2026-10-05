@@ -3,7 +3,6 @@ $ErrorActionPreference = "Stop"
 $app = "app-dimdim-equipe"
 $rg = "rg-dimdim"
 
-# As connection strings não devem ser armazenadas no Git.
 # Defina antes da execução:
 #
 # $env:DIMDIM_CONNECTION_STRING = "Server=tcp:...;"
