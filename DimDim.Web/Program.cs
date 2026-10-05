@@ -1,5 +1,7 @@
 using DimDim.Web.Data;
 using Microsoft.EntityFrameworkCore;
+using Azure.Monitor.OpenTelemetry.AspNetCore;
+using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
 
