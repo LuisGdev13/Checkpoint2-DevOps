@@ -11,4 +11,6 @@ az sql server create `
   --resource-group rg-dimdim `
   --location canadacentral `
   --admin-user dimdimadmin `
-  --admin-password $env:DIMDIM_SQL_ADMIN_PASSWORD
+  --admin-password $env:DIMDIM_SQL_ADMIN_PASSWORD `
+  --enable-public-network true
+  
