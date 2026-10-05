@@ -4,12 +4,12 @@ Projeto desenvolvido para o **2º Checkpoint — DevOps Tools & Cloud Computing*
 
 ## Integrantes
 
-> Preencher antes da entrega.
-
 | RM | Nome |
 |---|---|
-| XXXXX | Nome do integrante |
-| XXXXX | Nome do integrante |
+| RM566548 | Luis Guilherme Borges Silva |
+| RM 562992 | Leonardo Zerbinatti de Sales |
+| RM564928 | Rafael de Freitas Moraes |
+| RM563210 | Rafael Pascotte Mercadante |
 
 ## Links
 
@@ -60,12 +60,12 @@ Recursos utilizados:
 | Recurso | Nome |
 |---|---|
 | Resource Group | `rg-dimdim` |
-| Região | `mexicocentral` |
-| Azure SQL Server | `sql-dimdim-devfreitas` |
+| Região | `canadacentral` |
+| Azure SQL Server | `sql-dimdim-equipe` |
 | Azure SQL Database | `sqldb-dimdim` |
 | Application Insights | `appi-dimdim` |
 | App Service Plan | `asp-dimdim` |
-| App Service | `app-dimdim-devfreitas` |
+| App Service | `app-dimdim-equipe` |
 
 > Se algum nome for alterado durante a implantação, atualizar esta tabela.
 
