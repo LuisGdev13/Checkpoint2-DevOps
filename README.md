@@ -8,13 +8,13 @@ Projeto desenvolvido para o **2º Checkpoint — DevOps Tools & Cloud Computing*
 |---|---|
 | RM566548 | Luis Guilherme Borges Silva |
 | RM 562992 | Leonardo Zerbinatti de Sales |
-| RM564928 | Rafael de Freitas Moraes |
-| RM563210 | Rafael Pascotte Mercadante |
+| RM 564928 | Rafael de Freitas Moraes |
+| RM 563210 | Rafael Pascotte Mercadante |
 
 ## Links
 
-- GitHub: `https://github.com/devfreitas/Checkpoint2-DevOps`
-- Vídeo: `PREENCHER COM LINK DO VÍDEO`
+- GitHub: `https://github.com/LuisGdev13/Checkpoint2-DevOps.git`
+- Vídeo: `https://youtu.be/xtpFIxQiEgc`
 
 ## Descrição da solução
 
