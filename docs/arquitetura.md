@@ -1,18 +1,7 @@
 # Arquitetura da solução
 
 ## Visão macro
-
-```mermaid
-flowchart LR
-    U[Usuário] --> GH[GitHub]
-    GH --> GA[GitHub Actions]
-    GA --> AS[Azure App Service]
-    AS --> SQL[Azure SQL Database]
-    AS --> AI[Application Insights]
-    SQL --> T1[(Clientes)]
-    SQL --> T2[(Transacoes)]
-    T2 --> T1
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22e06086-7897-412a-bdf2-e89674fc8bc3" />
 
 ## Componentes
 
